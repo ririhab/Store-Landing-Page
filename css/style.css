@@ -1,0 +1,67 @@
+/* smooth scrool for links*/
+html {
+    scroll-behavior: smooth;
+}
+/*making sure there's no space between hetro and navbar*/
+.hero-section {
+    padding-top: 0;
+    margin-top: 0;
+}
+/* carousel image sizing*/
+.carousel-item img {
+    height: 800px;
+    object-fit: cover;
+}
+
+/*carousel indicators centered*/
+.carousel-indicators {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    
+}
+.carousel-caption {
+    padding: 1rem;
+}
+/*making sure caption is readable on all sizes*/
+.carousel-caption h1,
+.carousel-caption p {
+    color: #efeeed;
+    text-shadow: 1px 2px 3px #000;
+}
+/*buttons inside carousel*/
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+.carousel-control-next{
+    width: 15%; 
+}
+/*nabvar sizing to fit diffrent screens*/
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.btn-hover-effect {
+    transition: all 0.3s ease;
+}
+/*making it responsive on smaller carousel on phonescreen*/
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 500px;
+    }
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}

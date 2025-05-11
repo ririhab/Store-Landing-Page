@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./res/lotus.png"> 
+    <script src="./js/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>PureSkin</title>
+
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #e9e6df99;" data-bs-theme="light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./res/lotus.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-2">
+                PureSkin
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--hero section-->
+    <!--has 3 images sliding using bootstrap carousel-->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>    
+            <div class="carousel-inner">
+                <!--1st slide-->
+                <div class="carousel-item active">
+                    <img src="./res/maria-lupan-2gtMeWc5HBc-unsplash.jpg" class="d-block w-100" alt="Skincare Collection">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Natural Beauty</h1>
+                        <p class="lead">Discover our organic skincare collection</p>
+                        <a href="#products" class="btn btn-light btn-lg">Shop Now</a>
+                    </div>
+                </div>
+                <!--2nd slide-->
+                <div class="carousel-item">
+                    <img src="./res/maria-lupan-OZzBzjYlw3I-unsplash.jpg" class="d-block w-100" alt="Skincare Products">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Glow Naturally</h1>
+                        <p class="lead">Premium skincare for radiant skin</p>
+                        <a href="#products" class="btn btn-light btn-lg">Shop Now</a>
+                    </div>
+                </div>
+                <!--3rd slide-->
+                <div class="carousel-item">
+                    <img src="./res/maria-lupan-6EsxYnFnP34-unsplash.jpg" class="d-block w-100" alt="Beauty Products">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Beauty Essentials</h1>
+                        <p class="lead">Your daily skincare routine</p>
+                        <a href="#products" class="btn btn-light btn-lg">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button><br>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+
+    <!--product cards section-->
+
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Skincare Products</h2>
+            <div class="row g-4">
+                <!-- product card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="./res/Beauty_of_Joseon_-_Hanbang_Serum_Discovery_Kit_-_Makeup_Stash_Pakistan-2922750_grande.jpg" class="card-img-top" alt="Hydrating Serum">
+                        <div class="card-body">
+                            <h5 class="card-title">Hanbang Serum Discovery Kit</h5>
+                            <p class="card-text">Beauty of Joseon's Glow Serum with Propolis and Niacinamide soothes the skin, reduces inflammation, and brightens for a healthy, radiant glow for daily fresh and clean skin.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-dark">$49</span>
+                                <button class="btn btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="./res/SKIN1004MadagascarCentellaPoremizingFreshAmpoule.jpg" class="card-img-top" alt="Vitamin C Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Skin1004 Centella poremizing fresh ampoule.</h5>
+                            <p class="card-text">A pore-minimizing functional ampoule with Pink mineral salt and 9 Peptides cleanses pores and improves skin elasticity.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-dark">$23</span>
+                                <button class="btn btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="./res/SKIN1004MadagascarCentellaLightCleansingOil_Canada_533x.jpg" class="card-img-top" alt="Cleansing Oil">
+                        <div class="card-body">
+                            <h5 class="card-title">Centella Light Cleansing Oil</h5>
+                            <p class="card-text">Centella and 6 plant-derived oils gently dissolve makeup, sunscreen, and excess sebum on the skin, leaving a refreshing, oil-free finish — all while soothing and nourishing your skin.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-dark">$26</span>
+                                <button class="btn btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="./res/Ohlolly_BeautyofJoseon_RadianceCleansingBalm_2.jpg" class="card-img-top" alt="Night Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty of Joseon Radiance Cleansing Balm</h5>
+                            <p class="card-text">A gentle makeup remover that deeply cleanses while keeping skin moisturized, soft, and refreshed without tightness.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-dark">$45</span>
+                                <button class="btn btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row g-4">
+                <!-- product card 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="./res/1.jpg" class="card-img-top" alt="Hydrating Serum">
+                        <div class="card-body">
+                            <h5 class="card-title">Anua Peach 70% Niacinamide Serum</h5>
+                            <p class="card-text">Peach-infused serum with 5% Niacinamide and Desert Yeast Oil to brighten, smooth, and deeply hydrate. Made with 70% upcycled Jeju Peach.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-dark">$22</span>
+                                <button class="btn btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product card 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="./res/61+Ksx8tAuL._SL1500_.jpg" class="card-img-top" alt="Vitamin C Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty of Joseon Relief Sun Rice+</h5>
+                            <p class="card-text">Relief Sun Organic Sunscreen SPF50+ PA++++ with Probiotics nourishes, it protects the skin, leaving it calm, radiant, and well-defended.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-dark">$19</span>
+                                <button class="btn btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product card 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="./res/AX6H2626w_480x480.jpg" class="card-img-top" alt="Cleansing Oil">
+                        <div class="card-body">
+                            <h5 class="card-title">Anua Birch 70 Moisture Boosting Cream</h5>
+                            <p class="card-text">Maintain your skin's pH balance while providing long-lasting moisture, deeply hydrates and strengthens the skin's protective barrier</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-dark">$18</span>
+                                <button class="btn btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product card 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="./res/AX6H2075w.jpg" class="card-img-top" alt="Night Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Anua Heartleaf 70% Daily Lotion</h5>
+                            <p class="card-text">Daily Lotion calms and hydrates sensitive skin with lightweight moisture, leaving it soft, balanced, and refreshed</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-dark">$25</span>
+                                <button class="btn btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section-->
+
+    <footer class="bg-light text-dark pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <!--info part-->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">PureSkin</h5>
+                    <p>Your source for natural skincare. Clean, radiant, and nourishing beauty essentials.</p>
+                </div>
+                <!--links part-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Links</h5>
+                    <p><a href="#home" class="text-dark text-decoration-none">Home</a></p>
+                    <p><a href="#products" class="text-dark text-decoration-none">Products</a></p>
+                    <p><a href="#about" class="text-dark text-decoration-none">About</a></p>
+                    <p><a href="#contact" class="text-dark text-decoration-none">Contact</a></p>
+                </div>
+                <!--social media part-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Follow Us</h5>
+                    <a href="#" class="text-dark me-4"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark me-4"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-dark me-4"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <!--contact part-->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Contact</h5>
+                    <p><i class="fas fa-envelope me-3"></i> info@pureskin.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +123 456 7890</p>
+                </div>
+            </div>
+    
+            <hr class="my-3">
+            <div class="text-center">
+                <p class="mb-0">&copy; RT </p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!--attaching bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!--responsive landing page using HTML and CSS,tha layout has a header with navigation, a grid-based product section, and a simple footer.I used media queries so the page looks good on both pc and phone-->
